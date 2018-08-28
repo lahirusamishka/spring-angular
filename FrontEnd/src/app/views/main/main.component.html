@@ -1,0 +1,110 @@
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link text-center">
+      <span class="brand-text font-weight-light">Modern POS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a routerLink="/main/dashboard" routerLinkActive="active" href="#" class="nav-link">
+              <i class="nav-icon fa fa-dashboard"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/manage-customers" routerLinkActive="active" href="#" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Manage Customers
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/manage-items" class="nav-link">
+              <i class="nav-icon fa fa-sitemap"></i>
+              <p>
+                Manage Items
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/place-order" class="nav-link">
+              <i class="nav-icon fa fa-shopping-cart"></i>
+              <p>
+                Place Order
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/view-order" class="nav-link">
+              <i class="nav-icon fa fa-list"></i>
+              <p>
+                View Orders
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a (click)="logout()" href="#" class="nav-link">
+              <i class="nav-icon fa fa-sign-out"></i>
+              <p >
+                Logout
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2018 <a href="http://ijse.lk">IJSE</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+

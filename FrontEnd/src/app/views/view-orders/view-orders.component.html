@@ -1,0 +1,27 @@
+<div class="col-md-12 col-12">
+  <table id="tblOrders" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Order Date</th>
+      <th>TOtal Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orders | paginate: { itemsPerPage: 7, currentPage: p }"
+        >
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="4">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

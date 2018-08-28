@@ -1,0 +1,36 @@
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html"><b>Modern</b>POS</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      <form #frmLogin="ngForm" action="" method="post"
+         (ngSubmit)="login()">
+        <div class="form-group has-feedback">
+          <input [(ngModel)]="user.username" name="txtUserName" type="text" class="form-control" placeholder="Username">
+          <span class="fa fa-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+          <input [(ngModel)]="user.password" name="txtPassword" type="password" class="form-control" placeholder="Password">
+          <span class="fa fa-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+      <div *ngIf="failed" class="alert alert-danger alert-dismissible" style="margin-top:10px;">
+        <h6><i class="icon fa fa-ban"></i> Invalid Login Credentials !</h6>
+        Please enter valid login credentials to login
+      </div>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
