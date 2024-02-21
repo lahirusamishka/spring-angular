@@ -1,10 +1,7 @@
-# SpringBoot-Pos
-angular 6 front-end and spring boot back-end 
+# SpringBoot
+back-end 
 
 database 
-
-INSERT INTO user VALUES('username','password');
-
 
 INSERT INTO customer VALUES('C001','Panadura','Danapala');
 INSERT INTO customer VALUES('C002','Matara','Gunapala');
@@ -16,8 +13,6 @@ INSERT INTO customer VALUES('C007','Ambalangoda','Jinasena');
 INSERT INTO customer VALUES('C008','Baddegama','Somadasa');
 INSERT INTO customer VALUES('C009','Moratuwa','Danasiri');
 INSERT INTO customer VALUES('C010','Kandy','Somasiri');
-
-
 
 INSERT INTO items VALUES('P001',3000,'Keerisamba Retail',105.00);
 INSERT INTO items VALUES('P002',200,'Keerisamba 5Kg ',525.00);
