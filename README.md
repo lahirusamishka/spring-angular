@@ -1,5 +1,6 @@
-# SpringBoot
-back-end 
+# Angular 17 with Spring Boot 3.2.3 CRUD Application
+spring-api - spring boot app
+ng-web - angular app
 
 database 
 
