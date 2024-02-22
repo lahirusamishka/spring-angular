@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>api</name>
-	<description>Spring Boot ApI</description>
+	<description>Spring Boot Api</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

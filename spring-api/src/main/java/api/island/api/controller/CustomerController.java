@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import api.island.api.entity.Customer;
 import api.island.api.service.CustomerService;
 
-@RestController
-//@Controller
+//@RestController
+@Controller
 @RequestMapping("/api/v1/customers")
 public class CustomerController {
 	
@@ -30,10 +30,10 @@ public class CustomerController {
         List<Customer> customers = customerService.findAllCustomers(); // Clear method name
 
         if (customers.isEmpty()) {
-            return ResponseEntity.notFound().build(); // Return 404 for empty list
+            return ResponseEntity.notFound().build(); 
         }
 
-        return ResponseEntity.ok(customers); // Return 200 with customer list
+        return ResponseEntity.ok(customers); 
     }
 	
 }
